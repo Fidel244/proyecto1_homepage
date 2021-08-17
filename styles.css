@@ -5,6 +5,40 @@
 
 header{
     background-color: black;
-    height: 6vh;
+    height: 10vh;
     width: 100%;
+    display: flex;
+
+}
+
+
+.item-header{
+    width: 15%;
+    height: 10vh;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.5s;
+    background-color: black;
+}
+
+.item-header:hover{
+    color: rgb(207, 99, 250);
+    background-color: rgb(49, 49, 49);
+    font-size: 1.7rem;
+}
+
+#logo{
+    height: 10vh;
+    background-color: black;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
 }
