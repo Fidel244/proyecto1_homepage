@@ -95,29 +95,44 @@
         <section id="formulario_mapa">
             <div id="formulario">
                 <div id="formulario-div">
-                <form method="POST" >
-                        <div id="formulario-div-1">
-                            <label for="name">Nombre: </label>
+                    <div id="formulario-header">
+                        <h1>FORMULARIO</h1>
+                        <p>Ingresa tus datos para que podamos mantenerte informado</p>
+                    </div>
+
+                <form method="POST" autocomplete="off">
+                        <div class="item-form">
+                            <label for="name">Nombre </label>&nbsp
                             <input type="text" id="name" name="name">
                         </div>
-                        <div id="formulario-div-2">
-
+                        <div class="item-form">
+                            <label for="surname">Apellido </label>&nbsp
+                            <input type="text" id="surname" name="surname">
                         </div>
-
-                        <label for="surname">Apellido: </label>
-                        <input type="text" id="surname" name="surname">
-                  
+                        <div class="item-form">
+                            <label for="email">Correo </label>&nbsp
+                            <input type="text" id="email" name="email">
+                        </div>
+                        <div class="item-form">
+                            <input id="submit" type="submit" value="Enviar">
+                        </div>
 
                 </form>
             </div>
             </div>
             <div id="mapa">
-
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6597.663267950463!2d-66.89750336452451!3d10.50113416979596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a592cf382d2c5%3A0x8ac7046fc46f5cb3!2sCentro%20Comercial%20Parque%20Caracas%2C%20Avenida%20Sur%2021%2C%20Caracas%201011%2C%20Distrito%20Capital%2C%20Venezuela!5e0!3m2!1ses-419!2sde!4v1629900257815!5m2!1ses-419!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </section>
     </main>
     <footer>
-
+        <a href="https://www.facebook.com" target="_blank" class="footer-item">
+            <img src="imagenes/facebook.png" id="face" width="30vw" title="facebook">
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="footer-item">
+            <img src="imagenes/instagram.png"id="insta" width="30vw" title="instagram">
+        </a>
+        <p class="footer-item">Telefonos</p>
     </footer>
 
     <script src="app.js">
