@@ -54,3 +54,13 @@ for(var i=0; i<4; i++){
         contador = setInterval(cambiar_imagen,5000)
     }
 }
+
+
+
+document.querySelector("#galeria").onclick = function(){
+    document.querySelector("#home_page").style.display = "none";
+    document.querySelector("#galeria_page").style.width = "100%";
+    document.querySelector("#galeria_page").style.height = "100vh"; 
+    document.querySelector("#galeria_page").style.backgroundColor = "black";
+
+}
