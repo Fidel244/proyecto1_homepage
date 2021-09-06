@@ -333,20 +333,16 @@ img{
 
 
 
-#home_page{
-    display:none;
-}
-
 
 /*Galería de imagenes*/
 
 #galeria_page{
-    /*display: none;*/
+    display: none;
     width: 100%;
     height: auto;
 }
 
-/*Recordar cambiar clase bienvenido*/
+
 .galeria{
     padding-top: 3%;
     height: auto;
