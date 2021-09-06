@@ -64,7 +64,7 @@ main{
     width: 100%;
 }
 
-#bienvenido{
+.bienvenido{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,10 +72,11 @@ main{
     height: 4vh;
 }
 
-#bienvenido h1{
+.bienvenido h1{
     font-size: 1.5vw;
     letter-spacing: 0.2rem;
     cursor: default;
+   
 }
 
 #slider{
@@ -330,9 +331,215 @@ img{
 }
 
 
-#galeria_page{
-    display: none;
-    width: 100%;
-    height: 100vh;
 
+
+#home_page{
+    display:none;
+}
+
+
+/*Galería de imagenes*/
+
+#galeria_page{
+    /*display: none;*/
+    width: 100%;
+    height: auto;
+}
+
+/*Recordar cambiar clase bienvenido*/
+.galeria{
+    padding-top: 3%;
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    
+    
+}
+
+.galeria h1{
+    font-size: 20px;
+    
+}
+
+.galeria p{
+    padding: 2%;
+}
+
+.imagenes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.grid-container{
+    background-color: white;
+    box-shadow: 9px 8px 16px -2px rgba(0,0,0,0.89); 
+    box-shadow: 9px 8px 16px -2px rgba(0,0,0,0.89);
+    
+    width: 90%;
+    margin:1% 0;
+
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 250px;
+    padding: 20px;
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+
+}
+
+.img-gallery{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-item{
+    position: relative;
+}
+
+
+.gallery-title{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(0, 0, 0, 0.5));
+    width: 90%;
+    margin:0 ;
+    padding: 10px;
+    display: none;
+}
+
+/*versión mobil width<576px*/
+.gallery-item:nth-child(4),
+.gallery-item:nth-child(5),
+.gallery-item:nth-child(6),
+.gallery-item:nth-child(13),
+.gallery-item:nth-child(15),
+.gallery-item:nth-child(12),
+.gallery-item:nth-child(21),
+.gallery-item:nth-child(22){
+    grid-column-start: span 2 ;
+
+}
+
+/*Versión escritorio width>576px*/
+@media screen and (min-width:576px) {
+    .gallery-item:nth-child(12),
+    .gallery-item:nth-child(21){
+        grid-row-start: span 2 ;
+        grid-column-start: span 2 ;
+    
+    }
+
+    .gallery-item:nth-child(8),
+    .gallery-item:nth-child(9){
+        grid-row-start: span 2 ;
+        
+    
+    }
+
+    
+   
+}
+
+/*Versión escritorio width>768px*/
+@media screen and (min-width:768px) {
+    .grid-container{
+       
+        grid-template-columns: repeat(3,1fr);
+       
+    }
+
+    .gallery-item:nth-child(10)
+    {
+        grid-row-start: span 2 ;
+    
+    }
+    
+   
+}
+
+/*Versión escritorio width>990px*/
+@media screen and (min-width:990px) {
+    .grid-container{
+       
+        grid-template-columns: repeat(4,1fr);
+       
+    }
+
+    
+    .gallery-item:nth-child(4),
+    .gallery-item:nth-child(6),
+    .gallery-item:nth-child(12),
+    .gallery-item:nth-child(19)
+    {
+        grid-column-start: span 2 ;
+        grid-row-start: span 1 ;
+    
+    }
+
+    .gallery-item:nth-child(1),
+    .gallery-item:nth-child(8),
+    .gallery-item:nth-child(9),
+    .gallery-item:nth-child(10){
+        grid-row-start: span 2 ;
+        grid-column-start: span 2 ;
+    
+    }
+
+    .gallery-item:nth-child(21)
+    {
+        grid-column-start: span 1;
+        grid-row-start: span 1;
+        
+    
+    }
+}
+
+
+/*Versión escritorio width>1100px*/
+@media screen and (min-width:1100px) {
+
+    .gallery-item:nth-child(4),
+    .gallery-item:nth-child(6){
+        grid-column-start: span 1;
+        grid-row-start: span 1;
+        
+    
+    }
+
+    .gallery-item:nth-child(8){
+        grid-row-start: span 2 ;
+        grid-column-start: span 1 ;
+    
+    }
+
+    
+    .gallery-item:nth-child(12),
+    .gallery-item:nth-child(20){
+        grid-row-start: span 2 ;
+        grid-column-start: span 2 ;
+
+    }
+    .gallery-item:nth-child(5),
+    .gallery-item:nth-child(13),
+    .gallery-item:nth-child(15),
+    .gallery-item:nth-child(22){
+        grid-column-start: span 2 ;
+
+    }
+
+    .gallery-item:nth-child(8),
+    .gallery-item:nth-child(9),
+    .gallery-item:nth-child(10),
+    .gallery-item:nth-child(19){
+        grid-column-start: span 1 ;
+
+    }
+
+    
 }
