@@ -62,3 +62,18 @@ document.querySelector("#galeria").onclick = function(){
     document.querySelector("#galeria_page").style.display = "block";
 
 }
+
+
+document.querySelector("#cursos").onclick = function(){
+    document.querySelector("#home_page").style.display = "none";
+    document.querySelector("#galeria_page").style.display = "none";
+    document.querySelector("#cursos_page").style.display = "block";
+
+}
+
+document.querySelector("#home").onclick = function(){
+    document.querySelector("#home_page").style.display = "block";
+    document.querySelector("#galeria_page").style.display = "none";
+    document.querySelector("#cursos_page").style.display = "none";
+
+}
