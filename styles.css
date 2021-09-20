@@ -50,7 +50,7 @@ header{
 }
 
 main{
-    height: 380vh;
+    height: auto;
     width: 100%;
     background-color: rgb(235, 235, 235);
 }
@@ -134,7 +134,7 @@ button:hover{
 */
 #meet-the-artist{
     width: 100%;
-    height: 50vh;
+    /*height: 50vh;*/
     cursor: default;
     background-color: black;
     color: white;
@@ -207,28 +207,45 @@ button:hover{
 }
 
 
-#formulario_mapa{
+/*#formulario_mapa{
     display: flex;
     width: 100%;
     height: 80vh;
     
-}
+}*/
 
-#formulario, #mapa{
+/*#formulario, .mapa{
     width: 50vw;
     height: 80vh;
+}*/
+
+.contacto{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+       
+    
 }
 
-#formulario{
+/*#formulario{
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}*/
+
+.mapa{
+    background-color: white;
+    width: 100%;
+    
+    
 }
 
-#mapa{
-    background-color: white;
+.mapa iframe{
+    width: 100%;
+   
 }
+
 
 
 
@@ -239,16 +256,26 @@ footer{
 }
 
 #formulario-div{
-    width: 70%;
+    /*width: 70%;*/
+    width: 95%;
     height: 70%;
     display: flex;
-    background-color: rgb(238, 237, 235);
-    align-items: center;
-    box-shadow: 5px 5px 7px -1px rgba(0,0,0,0.86); 
-    box-shadow: 5px 5px 7px -1px rgba(0,0,0,0.86);
-    justify-content: center;
-    flex-direction: column;
+   /* background-color: rgb(238, 237, 235);*/
+    align-items: baseline;
+   /* box-shadow: 5px 5px 7px -1px rgba(0,0,0,0.86); 
+    box-shadow: 5px 5px 7px -1px rgba(0,0,0,0.86);*/
+    justify-content: space-around;
     border-radius: 3%;
+}
+
+.datos{
+    width: 45%;
+}
+
+form{
+    width: 45%;
+    
+    
 }
 
 
@@ -271,19 +298,25 @@ footer{
 }
 
 .item-form{
-    margin: 10% auto;
+   /* margin: 10% auto;*/
+   margin:3% auto;
     font-size: 2vw;
     display: flex;
     justify-content: center;
+    width: 90%;
+    
 }
 
 input{
     height: 3vh;
     width: 18vw;
+
 }
 
-#name,#surname{
-    width: 10vw;
+#name,#surname,#email{
+    width: 95%;
+    padding: 1%;
+    
 }
 
 #mapa{
@@ -293,8 +326,9 @@ input{
 }
 
 #submit{
-    background-color: black;
-    border:none;
+   /* background-color: black;*/
+    background-color: transparent;
+    border:1px solid white;
     width: 10vw;
     color: white;
     font-size: 1.3vw;
@@ -306,6 +340,15 @@ input{
 #submit:hover{
     color: rgb(207, 99, 250);
     background-color: rgb(49, 49, 49);
+}
+
+.datos{
+    text-align: left;
+    font-size: 18px;
+}
+
+.datos p{
+    margin-bottom: 2%;
 }
 
 footer{
