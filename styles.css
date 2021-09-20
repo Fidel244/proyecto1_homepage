@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 
 html{
@@ -266,14 +267,18 @@ footer{
     box-shadow: 5px 5px 7px -1px rgba(0,0,0,0.86);*/
     justify-content: space-around;
     border-radius: 3%;
+    flex-wrap: wrap;
 }
 
 .datos{
     width: 45%;
+    padding: 1%;
+    min-width: 270px;
 }
 
 form{
     width: 45%;
+    min-width: 270px;
     
     
 }
@@ -351,17 +356,25 @@ input{
     margin-bottom: 2%;
 }
 
-footer{
+footer,
+.redes{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
 }
 
-footer p{
+footer{
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/*footer p{
     cursor: default;
     font-size: 1.3vw;
-}
+}*/
 
 img{
     cursor: pointer;
@@ -369,6 +382,12 @@ img{
 
 .footer-item{
     margin: auto 5%;
+    color: white;
+    font-size: 25px;
+}
+
+.footer-item:hover{
+    color: rgb(207, 99, 250);
 }
 
 
