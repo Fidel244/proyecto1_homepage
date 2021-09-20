@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Home Page</title>
 </head>
+
 <body>
 
     <!--Este es el header, tendrá dos modos,  modo desktop  y  mobile/tableta-->
@@ -17,14 +19,14 @@
         <div class="item-header" id="home">
             Home
         </div>
-        <div  class="item-header" id="galeria">
+        <div class="item-header" id="galeria">
             Galería
         </div>
         <div class="item-header" id="cursos">
-            Cursos  
+            Cursos
         </div>
-        <div class="item-header" id="nosotros">
-            Nosotros
+        <div class="item-header" id="contacto">
+            Contacto
         </div>
         <div class="item-header" id="online">
             Online Store
@@ -35,7 +37,7 @@
             <div id="bienvenido" class="bienvenido">
                 <h1>BIENVENIDO</h1>
             </div>
-            <div id="slider" >
+            <div id="slider">
 
             </div>
             <div id="controles">
@@ -54,7 +56,9 @@
                     ALICIA GILL
                 </h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellendus nisi in deserunt. Tempore excepturi sed perspiciatis laudantium, laborum facilis. Itaque tempora at, quod dicta voluptas officia. Blanditiis, ipsa explicabo!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellendus nisi in deserunt.
+                    Tempore excepturi sed perspiciatis laudantium, laborum facilis. Itaque tempora at, quod dicta
+                    voluptas officia. Blanditiis, ipsa explicabo!
                 </p>
 
             </div>
@@ -68,74 +72,83 @@
                     ¡Esculturas, vasijas y más!
                 </h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellendus nisi in deserunt. Tempore excepturi sed perspiciatis laudantium, laborum facilis. Itaque tempora at, quod dicta voluptas officia. Blanditiis, ipsa explicabo!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellendus nisi in deserunt.
+                    Tempore excepturi sed perspiciatis laudantium, laborum facilis. Itaque tempora at, quod dicta
+                    voluptas officia. Blanditiis, ipsa explicabo!
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellendus nisi in deserunt. Tempore excepturi sed perspiciatis laudantium, laborum facilis. Itaque tempora at, quod dicta voluptas officia. Blanditiis, ipsa explicabo!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellendus nisi in deserunt.
+                    Tempore excepturi sed perspiciatis laudantium, laborum facilis. Itaque tempora at, quod dicta
+                    voluptas officia. Blanditiis, ipsa explicabo!
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellendus nisi in deserunt. Tempore excepturi sed perspiciatis laudantium, laborum facilis. Itaque tempora at, quod dicta voluptas officia. Blanditiis, ipsa explicabo!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellendus nisi in deserunt.
+                    Tempore excepturi sed perspiciatis laudantium, laborum facilis. Itaque tempora at, quod dicta
+                    voluptas officia. Blanditiis, ipsa explicabo!
                 </p>
             </div>
         </section>
-        <section id="meet-the-artist">
+        <section id="meet-the-artist" class="contacto">
+            
             <div id="meet">
-                <h3>
-                    CONOCE AL ARTISTA
-                </h3>
                 <h1>
-                    ALICIA GILL
+                    CONTACTO
                 </h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellendus nisi in deserunt. Tempore excepturi sed perspiciatis laudantium, laborum facilis. Itaque tempora at, quod dicta voluptas officia. Blanditiis, ipsa explicabo!
-                </p>
+
+                <h3>
+                    Ingresa tus datos para que podamos mantenerte informado
+                </h3>
 
             </div>
-        </section>
-        <section id="formulario_mapa">
-            <div id="formulario">
-                <div id="formulario-div">
-                    <div id="formulario-header">
-                        <h1>FORMULARIO</h1>
-                        <p>Ingresa tus datos para que podamos mantenerte informado</p>
-                    </div>
+
+
+            <div id="formulario-div">
 
                 <form method="POST" autocomplete="off">
-                        <div class="item-form">
-                            <label for="name">Nombre </label>&nbsp
-                            <input type="text" id="name" name="name">
-                        </div>
-                        <div class="item-form">
-                            <label for="surname">Apellido </label>&nbsp
-                            <input type="text" id="surname" name="surname">
-                        </div>
-                        <div class="item-form">
-                            <label for="email">Correo </label>&nbsp
-                            <input type="text" id="email" name="email">
-                        </div>
-                        <div class="item-form">
-                            <input id="submit" type="submit" value="Enviar">
-                        </div>
+                    <div class="item-form">
+                        <input type="text" id="name" name="name" placeholder="Nombre">
+                    </div>
+                    <div class="item-form">
+                        <input type="text" id="surname" name="surname" placeholder="Apellido">
+                    </div>
+                    <div class="item-form">
+                        <input type="text" id="email" name="email" placeholder="Correo">
+                    </div>
+                    <div class="item-form">
+                        <input id="submit" type="submit" value="Enviar">
+                    </div>
 
                 </form>
+
+                <div class="datos">
+                    <p>Correo: contacto@gmail.com</p>
+                    <p>Telefonos: 0000-0000000</p>
+                    <p>Dirección: Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat commodi suscipit, enim quasi cumque illum illo dolorum inc</p>
+                 
+                </div>
             </div>
-            </div>
-            <div id="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6597.663267950463!2d-66.89750336452451!3d10.50113416979596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a592cf382d2c5%3A0x8ac7046fc46f5cb3!2sCentro%20Comercial%20Parque%20Caracas%2C%20Avenida%20Sur%2021%2C%20Caracas%201011%2C%20Distrito%20Capital%2C%20Venezuela!5e0!3m2!1ses-419!2sde!4v1629900257815!5m2!1ses-419!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+
+        </section>
+       
+        <section class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6597.663267950463!2d-66.89750336452451!3d10.50113416979596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a592cf382d2c5%3A0x8ac7046fc46f5cb3!2sCentro%20Comercial%20Parque%20Caracas%2C%20Avenida%20Sur%2021%2C%20Caracas%201011%2C%20Distrito%20Capital%2C%20Venezuela!5e0!3m2!1ses-419!2sde!4v1629900257815!5m2!1ses-419!2sde"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
     </main>
-    
+
     <!-- Galería de imágenes -->
     <main id="galeria_page">
         <div class="bienvenido galeria">
             <h1>BIENVENIDO A LA GALERÍA</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora animi deleniti sequi debitis, laborum sunt asperiores harum nostrum velit. Cupiditate mollitia eum rerum possimus beatae blanditiis quae vero dolor voluptas.</p>
-           
-        </div> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora animi deleniti sequi debitis, laborum
+                sunt asperiores harum nostrum velit. Cupiditate mollitia eum rerum possimus beatae blanditiis quae vero
+                dolor voluptas.</p>
+
+        </div>
 
         <section class="imagenes">
-            
+
 
             <div class="contaainer grid-container">
                 <div class="gallery-item">
@@ -245,37 +258,57 @@
     <main id="cursos_page">
         <div class="bienvenido galeria">
             <h1>CONOCE SOBRE LOS CURSOS QUE OFRECEMOS</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora animi deleniti sequi debitis, laborum sunt asperiores harum nostrum velit. Cupiditate mollitia eum rerum possimus beatae blanditiis quae vero dolor voluptas.</p>
-           
-        </div> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora animi deleniti sequi debitis, laborum
+                sunt asperiores harum nostrum velit. Cupiditate mollitia eum rerum possimus beatae blanditiis quae vero
+                dolor voluptas.</p>
+
+        </div>
 
         <section class="imagenes">
-            
+
             <div class="grid-container grid-container2">
                 <div class="container curso-item">
                     <img src="imagenes/curso1.JPG" class="img-curso" alt="">
                     <h2 class="curso-title">TITULO DEL CURSO</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita cupiditate corrupti blanditiis rem error! Quasi magni ab praesentium, at accusantium ipsam itaque laboriosam. Aut sit ea aspernatur, deserunt eius officia!
-                    Impedit ratione, aperiam ducimus saepe magni, commodi odit quae rerum autem architecto aliquid eum eos, quod hic illo omnis? Quasi vero fugiat architecto. Error eveniet et expedita architecto nihil fugiat.
-                    Ipsam dolorem assumenda exercitationem, nostrum deleniti quod. Blanditiis aliquam velit repudiandae reiciendis provident fugiat fugit natus rem voluptatibus facere illo, suscipit aspernatur, error repellat minus laboriosam sint vitae tenetur. Error?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita cupiditate corrupti blanditiis
+                        rem error! Quasi magni ab praesentium, at accusantium ipsam itaque laboriosam. Aut sit ea
+                        aspernatur, deserunt eius officia!
+                        Impedit ratione, aperiam ducimus saepe magni, commodi odit quae rerum autem architecto aliquid
+                        eum eos, quod hic illo omnis? Quasi vero fugiat architecto. Error eveniet et expedita architecto
+                        nihil fugiat.
+                        Ipsam dolorem assumenda exercitationem, nostrum deleniti quod. Blanditiis aliquam velit
+                        repudiandae reiciendis provident fugiat fugit natus rem voluptatibus facere illo, suscipit
+                        aspernatur, error repellat minus laboriosam sint vitae tenetur. Error?</p>
 
                 </div>
 
                 <div class="container curso curso-item">
                     <img src="imagenes/curso2.JPG" class="img-curso" alt="">
                     <h2 class="curso-title">TITULO DEL CURSO</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita cupiditate corrupti blanditiis rem error! Quasi magni ab praesentium, at accusantium ipsam itaque laboriosam. Aut sit ea aspernatur, deserunt eius officia!
-                        Impedit ratione, aperiam ducimus saepe magni, commodi odit quae rerum autem architecto aliquid eum eos, quod hic illo omnis? Quasi vero fugiat architecto. Error eveniet et expedita architecto nihil fugiat.
-                        Ipsam dolorem assumenda exercitationem, nostrum deleniti quod. Blanditiis aliquam velit repudiandae reiciendis provident fugiat fugit natus rem voluptatibus facere illo, suscipit aspernatur, error repellat minus laboriosam sint vitae tenetur. Error?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita cupiditate corrupti blanditiis
+                        rem error! Quasi magni ab praesentium, at accusantium ipsam itaque laboriosam. Aut sit ea
+                        aspernatur, deserunt eius officia!
+                        Impedit ratione, aperiam ducimus saepe magni, commodi odit quae rerum autem architecto aliquid
+                        eum eos, quod hic illo omnis? Quasi vero fugiat architecto. Error eveniet et expedita architecto
+                        nihil fugiat.
+                        Ipsam dolorem assumenda exercitationem, nostrum deleniti quod. Blanditiis aliquam velit
+                        repudiandae reiciendis provident fugiat fugit natus rem voluptatibus facere illo, suscipit
+                        aspernatur, error repellat minus laboriosam sint vitae tenetur. Error?</p>
 
                 </div>
 
                 <div class="container curso curso-item">
                     <img src="imagenes/curso3.JPG" class="img-curso" alt="">
                     <h2 class="curso-title">TITULO DEL CURSO</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita cupiditate corrupti blanditiis rem error! Quasi magni ab praesentium, at accusantium ipsam itaque laboriosam. Aut sit ea aspernatur, deserunt eius officia!
-                        Impedit ratione, aperiam ducimus saepe magni, commodi odit quae rerum autem architecto aliquid eum eos, quod hic illo omnis? Quasi vero fugiat architecto. Error eveniet et expedita architecto nihil fugiat.
-                        Ipsam dolorem assumenda exercitationem, nostrum deleniti quod. Blanditiis aliquam velit repudiandae reiciendis provident fugiat fugit natus rem voluptatibus facere illo, suscipit aspernatur, error repellat minus laboriosam sint vitae tenetur. Error?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita cupiditate corrupti blanditiis
+                        rem error! Quasi magni ab praesentium, at accusantium ipsam itaque laboriosam. Aut sit ea
+                        aspernatur, deserunt eius officia!
+                        Impedit ratione, aperiam ducimus saepe magni, commodi odit quae rerum autem architecto aliquid
+                        eum eos, quod hic illo omnis? Quasi vero fugiat architecto. Error eveniet et expedita architecto
+                        nihil fugiat.
+                        Ipsam dolorem assumenda exercitationem, nostrum deleniti quod. Blanditiis aliquam velit
+                        repudiandae reiciendis provident fugiat fugit natus rem voluptatibus facere illo, suscipit
+                        aspernatur, error repellat minus laboriosam sint vitae tenetur. Error?</p>
 
                 </div>
             </div>
@@ -285,19 +318,20 @@
     </main>
 
 
-   
+
     <footer>
         <a href="https://www.facebook.com" target="_blank" class="footer-item">
             <img src="imagenes/facebook.png" id="face" width="30vw" title="facebook">
         </a>
         <a href="https://www.instagram.com" target="_blank" class="footer-item">
-            <img src="imagenes/instagram.png"id="insta" width="30vw" title="instagram">
+            <img src="imagenes/instagram.png" id="insta" width="30vw" title="instagram">
         </a>
-        <p class="footer-item">Telefonos</p>
+        <!-- <p class="footer-item">Telefonos</p> -->
     </footer>
 
     <script src="app.js">
 
     </script>
 </body>
+
 </html>
