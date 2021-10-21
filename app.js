@@ -6,9 +6,10 @@ const imagenes_slider = ["imagenes/_DSC3058-Editar.jpg",
         "imagenes/KarinaUriarte-47.jpg"]
 const arreglo_circulos = document.getElementsByClassName("circulo")
 var indice = 1
+let color='#9c6644'
 
 //el primer circulito del slider pintado en rosa
-arreglo_circulos[0].style.backgroundColor = "rgb(207, 99, 250)"
+arreglo_circulos[0].style.backgroundColor = color
 
 // este setInterval es para hacer funcional el slider
 
@@ -21,16 +22,16 @@ function cambiar_imagen(){
         arreglo_circulos[i].style.backgroundColor = "black"
 
         if(indice == 0 && arreglo_circulos[i].id == "uno") 
-            arreglo_circulos[i].style.backgroundColor = "rgb(207, 99, 250)"
+            arreglo_circulos[i].style.backgroundColor = color
         
         else if(indice == 1 && arreglo_circulos[i].id == "dos")
-            arreglo_circulos[i].style.backgroundColor = "rgb(207, 99, 250)"
+            arreglo_circulos[i].style.backgroundColor = color
         
         else if(indice == 2 && arreglo_circulos[i].id == "tres") 
-            arreglo_circulos[i].style.backgroundColor = "rgb(207, 99, 250)"
+            arreglo_circulos[i].style.backgroundColor = color
         
         else if(indice == 3 && arreglo_circulos[i].id == "cuatro") 
-            arreglo_circulos[i].style.backgroundColor = "rgb(207, 99, 250)"
+            arreglo_circulos[i].style.backgroundColor = color
     }
     slider.style.backgroundImage = "url("+imagenes_slider[indice]+")"
     indice++;
@@ -62,6 +63,12 @@ document.querySelector("#galeria").onclick = function(){
     document.querySelector("#galeria_page").style.display = "block";
     document.querySelector("#cursos_page").style.display = "none";
 
+    
+    document.getElementById('home').classList.remove('actual');
+    document.getElementById('galeria').classList.add('actual');
+    document.getElementById('cursos').classList.remove('actual');
+    document.getElementById('contacto').classList.remove('actual');
+
 }
 
 
@@ -70,11 +77,23 @@ document.querySelector("#cursos").onclick = function(){
     document.querySelector("#galeria_page").style.display = "none";
     document.querySelector("#cursos_page").style.display = "block";
 
+    document.getElementById('home').classList.remove('actual');
+    document.getElementById('galeria').classList.remove('actual');
+    document.getElementById('cursos').classList.add('actual');
+    document.getElementById('contacto').classList.remove('actual');
+
+
 }
 
 document.querySelector("#home").onclick = function(){
     document.querySelector("#home_page").style.display = "block";
     document.querySelector("#galeria_page").style.display = "none";
     document.querySelector("#cursos_page").style.display = "none";
+
+    document.getElementById('home').classList.add('actual');
+    document.getElementById('galeria').classList.remove('actual');
+    document.getElementById('cursos').classList.remove('actual');
+    document.getElementById('contacto').classList.remove('actual');
+
 
 }
