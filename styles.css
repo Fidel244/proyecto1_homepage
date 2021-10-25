@@ -274,7 +274,7 @@ button:hover{
 
 
 footer{
-    background-color: black;
+    background-color: #9c6644;
     height: 20vh;
     width: 100%;
 }
@@ -410,7 +410,7 @@ img{
 }
 
 .footer-item:hover{
-    color: #9c6644;
+    color: #582f0e;
 }
 
 
