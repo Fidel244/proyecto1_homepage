@@ -1,0 +1,354 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'logo.jpeg' %}" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <title>KARINA URIARTE- Arte en Objetos</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="{% static 'logo.jpeg' %}" alt="karina" class="logo">
+    </header>
+
+    <!--Este es el nav, tendrá dos modos,  modo desktop  y  mobile/tableta-->
+    <nav>
+        
+        <div class="item-header actual" id="home">
+            Home
+        </div>
+        <div class="item-header" id="galeria">
+            Galería
+        </div>
+        <div class="item-header" id="cursos">
+            Cursos
+        </div>
+        <div class="item-header" id= "contacto">
+            <a href="#contacto-section" class="enlace-contacto">Contacto</a>
+        </div>
+        <div class="item-header" id="online">
+            Online Store
+        </div>
+    </nav>
+    <main id="home_page">
+        <section id="seccion-slider">
+            <div id="bienvenido" class="bienvenido">
+                <h1>BIENVENIDO</h1>
+            </div>
+            <div id="slider">
+
+            </div>
+            <div id="controles">
+                <div class="circulo" id="uno"></div>
+                <div class="circulo" id="dos"></div>
+                <div class="circulo" id="tres"></div>
+                <!-- <div class="circulo" id="cuatro"></div> -->
+            </div>
+        </section>
+        <section id="meet-the-artist">
+            <div id="meet">
+                <h3>
+                    CONOCÉ AL ARTISTA
+                </h3>
+                <h1>
+                    KARINA URIARTE
+                </h1>
+                <p>
+                    Hay un hilo invisible que une la pasión y el arte. Ese hilo es el amor. 
+                </p>
+                <p>Un amor profundo que aún me hace sentir maravillada cada vez que una pieza sale del horno convertida en realidad: hace apenas unos instantes era agua, barro y fuego; y ahora, la  maravillosa alquimia, le da vida a aquello que anidaba en nuestra imaginación.</p>
+                <p>Un amor profundo por este oficio, que me acompaña desde muy pequeña y que, como toda vocación, se torna inexplicable e inevitable a la vez: sólo hay que seguirla.</p>
+                <p>Y es ese amor profundo el que me llevó a perfeccionarme y a recorrer este hermoso camino que aún sigo transitando: </p>
+
+                <p class="izquierda">-Estudié dos años y medio Diseño Gráfico en la Universidad de Palermo. <br>
+                    -Realicé estudios de Cerámica artística y de escultura en el taller dictado por Pablo Edelstein. <br>
+                    -Fui ayudante de Cátedra de Carlos Cairo (Ceramista). <br>
+                    -Participé en una investigación con Carlos Levinton. <br>
+                    -Realicé Taller de Pintura con Ricardo Celma. <br>
+                    </p>
+            </div>
+        </section>
+        <section id="meet-the-artist2">
+            <div id="imagen-izquierda">
+
+            </div>
+            <div id="texto-derecha">
+                <h1>
+                    ¡Esculturas, moldería y decoración!
+                </h1>
+                <p>
+                    <strong>Con las manos y el alma en el barro</strong>
+                    
+                </p>
+
+                <em class="pensamiento">“La belleza viene del corazón y se derrama por los dedos del alfarero”
+                    Bernard Leach (Profesor de arte británico. Ceramista.)
+                </em>
+
+                <p>
+                    Una experiencia totalmente artística y pura. Un espacio donde crear y relajarse. ¡Un lugar para conectarse con los sentidos!
+                </p>
+                <p>
+                    ¡Vení a disfrutar el placer del contacto con la arcilla! Nada más lindo y gratificante que crear tus propias piezas. Pensar en el diseño, en la forma y los colores, y disfrutar de ese increíble proceso para llegar a la pieza final. 
+                </p>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Galería de imágenes -->
+    <main id="galeria_page">
+        <div class="bienvenido galeria">
+            <h1>BIENVENIDO A LA GALERÍA</h1>
+            <p>Piezas en cerámica hechas a mano con el torno alfarero. </p>
+
+        </div>
+
+        <section class="imagenes">
+
+
+            <div class="contaainer grid-container">
+                <div class="gallery-item">
+                    <img src="{% static 'galeria1.jpg' %}" alt="" class="img-gallery">
+                    <h2 class="gallery-title">Imagen 1</h2>
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'galeria2.jpg' %}" alt="" class="img-gallery">
+                    <h2 class="gallery-title">Imagen 2</h2>
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'galeria3.jpg' %}" alt="" class="img-gallery">
+                    <h2 class="gallery-title">Imagen 3</h2>
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'galeria4.jpg' %}" alt="" class="img-gallery">
+                    <h2 class="gallery-title">Imagen 4</h2>
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'galeria5.jpg' %}" alt="" class="img-gallery">
+                    <h2 class="gallery-title">Imagen 5</h2>
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'galeria6.jpg' %}" alt="" class="img-gallery">
+                    <h2 class="gallery-title">Imagen 6</h2>
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'galeria7.jpg' %}" alt="" class="img-gallery">
+                    <h2 class="gallery-title">Imagen 7</h2>
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'galeria8.jpg' %}" alt="" class="img-gallery">
+                    <h2 class="gallery-title">Imagen 8</h2>
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'galeria9.jpg' %}" alt="" class="img-gallery">
+                    <h2 class="gallery-title">Imagen 9</h2>
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'galeria10.jpg' %}" alt="" class="img-gallery">
+                    <h2 class="gallery-title">Imagen 10</h2>
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'galeria11.jpg' %}" alt="" class="img-gallery">
+                    <h2 class="gallery-title">Imagen 11</h2>
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'galeria12.jpg' %}" alt="" class="img-gallery">
+                    <h2 class="gallery-title">Imagen 12</h2>
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'galeria13.jpg' %}" alt="" class="img-gallery">
+                    <h2 class="gallery-title">Imagen 13</h2>
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'galeria14.jpg' %}" alt="" class="img-gallery">
+                    <h2 class="gallery-title">Imagen 14</h2>
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'galeria15.jpg' %}" alt="" class="img-gallery">
+                    <h2 class="gallery-title">Imagen 15</h2>
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'galeria16.jpg' %}" alt="" class="img-gallery">
+                    <h2 class="gallery-title">Imagen 16</h2>
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'galeria17.jpg' %}" alt="" class="img-gallery">
+                    <h2 class="gallery-title">Imagen 17</h2>
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'galeria18.jpg' %}" alt="" class="img-gallery">
+                    <h2 class="gallery-title">Imagen 18</h2>
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'galeria19.jpg' %}" alt="" class="img-gallery">
+                    <h2 class="gallery-title">Imagen 19</h2>
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'galeria20.jpg' %}" alt="" class="img-gallery">
+                    <h2 class="gallery-title">Imagen 20</h2>
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'galeria21.jpg' %}" alt="" class="img-gallery">
+                    <h2 class="gallery-title">Imagen 21</h2>
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'galeria22.jpg' %}" alt="" class="img-gallery">
+                    <h2 class="gallery-title">Imagen 22</h2>
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'galeria23.jpg' %}" alt="" class="img-gallery">
+                    <h2 class="gallery-title">Imagen 23</h2>
+                </div>
+                <div class="gallery-item">
+                    <img src="{% static 'galeria24.jpg' %}" alt="" class="img-gallery">
+                    <h2 class="gallery-title">Imagen 24</h2>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <!-- Fin de galería de imágenes -->
+
+    <!-- Galería de imágenes -->
+    <main id="cursos_page">
+        <div class="bienvenido galeria">
+            <h1>¡Vení a las clases de cerámica a aprender este maravilloso oficio! </h1>
+            <p>No se requiere experiencia previa y los cursos se dictan durante todo el año. Te esperamos en nuestro taller en CABA.</p>
+
+        </div>
+
+        <section class="imagenes">
+
+            <div class="grid-container grid-container2">
+                <div class="container curso-item">
+                    <img src="{% static 'curso1.JPG' %}" class="img-curso" alt="">
+                    <h2 class="curso-title">TITULO DEL CURSO</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita cupiditate corrupti blanditiis
+                        rem error! Quasi magni ab praesentium, at accusantium ipsam itaque laboriosam. Aut sit ea
+                        aspernatur, deserunt eius officia!
+                        Impedit ratione, aperiam ducimus saepe magni, commodi odit quae rerum autem architecto aliquid
+                        eum eos, quod hic illo omnis? Quasi vero fugiat architecto. Error eveniet et expedita architecto
+                        nihil fugiat.
+                        Ipsam dolorem assumenda exercitationem, nostrum deleniti quod. Blanditiis aliquam velit
+                        repudiandae reiciendis provident fugiat fugit natus rem voluptatibus facere illo, suscipit
+                        aspernatur, error repellat minus laboriosam sint vitae tenetur. Error?</p>
+
+                </div>
+
+                <div class="container curso curso-item">
+                    <img src="{% static 'curso2.JPG' %}" class="img-curso" alt="">
+                    <h2 class="curso-title">TITULO DEL CURSO</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita cupiditate corrupti blanditiis
+                        rem error! Quasi magni ab praesentium, at accusantium ipsam itaque laboriosam. Aut sit ea
+                        aspernatur, deserunt eius officia!
+                        Impedit ratione, aperiam ducimus saepe magni, commodi odit quae rerum autem architecto aliquid
+                        eum eos, quod hic illo omnis? Quasi vero fugiat architecto. Error eveniet et expedita architecto
+                        nihil fugiat.
+                        Ipsam dolorem assumenda exercitationem, nostrum deleniti quod. Blanditiis aliquam velit
+                        repudiandae reiciendis provident fugiat fugit natus rem voluptatibus facere illo, suscipit
+                        aspernatur, error repellat minus laboriosam sint vitae tenetur. Error?</p>
+
+                </div>
+
+                <div class="container curso curso-item">
+                    <img src="{% static 'curso3.JPG' %}" class="img-curso" alt="">
+                    <h2 class="curso-title">TITULO DEL CURSO</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita cupiditate corrupti blanditiis
+                        rem error! Quasi magni ab praesentium, at accusantium ipsam itaque laboriosam. Aut sit ea
+                        aspernatur, deserunt eius officia!
+                        Impedit ratione, aperiam ducimus saepe magni, commodi odit quae rerum autem architecto aliquid
+                        eum eos, quod hic illo omnis? Quasi vero fugiat architecto. Error eveniet et expedita architecto
+                        nihil fugiat.
+                        Ipsam dolorem assumenda exercitationem, nostrum deleniti quod. Blanditiis aliquam velit
+                        repudiandae reiciendis provident fugiat fugit natus rem voluptatibus facere illo, suscipit
+                        aspernatur, error repellat minus laboriosam sint vitae tenetur. Error?</p>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Area de contacto- Se encuentra en todas las páginas -->
+    <section id="contacto-section" class="contacto">
+            
+        <div id="meet">
+            <h1>
+                CONTACTO
+            </h1>
+
+            <h3>
+                Ingresá tus datos para que podamos mantenerte informado
+            </h3>
+
+        </div>
+
+
+        <div id="formulario-div">
+
+            <form method="POST" autocomplete="off">
+                <div class="item-form">
+                    <input type="text" id="name" name="name" placeholder="Nombre">
+                </div>
+                <div class="item-form">
+                    <input type="text" id="surname" name="surname" placeholder="Apellido">
+                </div>
+                <div class="item-form">
+                    <input type="text" id="email" name="email" placeholder="Correo">
+                </div>
+                <div class="item-form">
+                    <input id="submit" type="submit" value="Enviar">
+                </div>
+
+            </form>
+
+            <div class="datos">
+                <p><strong>Correo:</strong> contacto@gmail.com</p>
+                <p><strong>Telefono:</strong> 011-35617568</p>
+                <p><strong>Dirección:</strong> Av. Francisco Bilbao 2229 C1406FFS CABA</p>
+             
+            </div>
+        </div>
+
+    </section>
+   
+    <section class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.833566173986!2d-58.45992198519423!3d-34.63364596658837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca294e18904f%3A0x19c2eeb50113547d!2sAv.%20Francisco%20Bilbao%202229%2C%20C1406FFS%20CABA!5e0!3m2!1ses-419!2sar!4v1635203533812!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <footer>
+        <div class="redes">
+        <a href="https://www.facebook.com" target="_blank" class="footer-item">
+            <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="footer-item">
+            <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="footer-item">
+            <i class="bi bi-twitter"></i>
+        </a>
+    </div>
+    <div id="copyright">Copyright&copy; 2021 - Página creada por  - Todos los derechos reservados</div>
+        <!-- <p class="footer-item">Telefonos</p> -->
+    </footer>
+
+    <script src="{% static 'app.js' %}">
+
+    </script>
+</body>
+
+</html>
+
+
