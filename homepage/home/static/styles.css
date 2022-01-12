@@ -783,7 +783,7 @@ display: none;
     }
 
     #meet-the-artist{
-        height: 180vh;
+        height: 150vh;
     }
 
     #meet > h1{
@@ -792,7 +792,7 @@ display: none;
     }
     
     #meet  p{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin: 5% auto;
     }
     
@@ -809,10 +809,11 @@ display: none;
 
     #meet-the-artist2{
         display: block;
-        height: 200vh;
+        height: 210vh;
         width: 100%;
         align-items: center;
         justify-content: space-evenly;
+        text-align: center;
     }
     
     #imagen-izquierda{
@@ -841,12 +842,12 @@ display: none;
     }
     
     #texto-derecha > h1{
-        font-size: 3rem;
+        font-size: 2.2rem;
         margin: 2% auto;
     }
     
     #texto-derecha > p{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin: 1% auto;
     }
 
@@ -873,4 +874,14 @@ display: none;
          transition: all 0.5s;
      }
      
+     input{
+        height: 3vh;
+        width: 18vw;
+        background-color: white;
+    }
+
+    form{
+        width: 100vw;
+        min-width: 270px;
+    }
 }
