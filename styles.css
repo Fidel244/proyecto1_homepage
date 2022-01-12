@@ -109,7 +109,7 @@ main{
 
     box-shadow: 9px 8px 16px -2px rgba(0,0,0,0.89);
     box-shadow: 9px 8px 16px -2px rgba(0,0,0,0.89);
-    background-image: url("slider1.jpeg");
+    background-image: url("imagenes/slider1.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -191,7 +191,7 @@ main{
 
     box-shadow: 9px 8px 16px -2px rgba(0,0,0,0.89);
     box-shadow: 9px 8px 16px -2px rgba(0,0,0,0.89);
-    background-image: url("conece_artista.jpg");
+    background-image: url("imagenes/conece_artista.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -777,7 +777,7 @@ display: none;
         width: 100%;
         height: 65vh;
         box-shadow: none;
-        background-image: url("slider1.jpeg");
+        background-image: url("imagenes/slider1.jpeg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -839,7 +839,7 @@ display: none;
         display: block;
         box-shadow: 9px 8px 16px -2px rgba(0,0,0,0.89);
         box-shadow: 9px 8px 16px -2px rgba(0,0,0,0.89);
-        background-image: url("conece_artista.JPG");
+        background-image: url("imangenes/conece_artista.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
