@@ -12,8 +12,7 @@ def envio_correo(request):
     Apellido = request.POST['surname']
     Correo = request.POST["email"]
 
-    yag = yagmail.SMTP(user="contactokarinauri@gmail.com", password="AzzwwX98")
-    yag.send(to=["contactokarinauri@gmail.com"], subject="Alguien quiere contactarla", contents=[f"{Nombre} {Apellido} es un posible cliente... este es su correo: {Correo}"])
+    yag = yagmail.SMTP(user="ceramicakuriarte@gmail.com", password="KarinaCeramica")
+    yag.send(to=["ceramicakuriarte@gmail.com"], subject="Alguien quiere contactarla", contents=[f"{Nombre} {Apellido} es un posible cliente... este es su correo: {Correo}"])
     yag.send(to=[Correo], subject="Karina Uriarte ya tiene tus datos!", contents=["Usted acaba de colocar sus datos en el formulario de contacto de Karina Uriarte con éxito."])
     return redirect('/home#contacto-section')
-    
